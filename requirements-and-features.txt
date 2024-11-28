@@ -1,0 +1,35 @@
+CredShield
+
+1) What is the purpose of the project?
+2) Features/Scope of the project?
+3) Architecutre of the project?
+4) Structure of the project?
+
+
++) Purpose:- Project used as an Identity Provider(IDP) / Authentication Guard providing various user authentication/authorization customized to each application with various access scopes. It should provide various MFA solutions like Authenticator, OTP, Yubikey. It should allow various forms of login inculding passwordless login. It should also take care of user management.
+
++) /ui/**  -> for all ui pages
++) /api/** -> for all api's
+
+
+Goal: I should completly forget about user management & should be able to just call api to get the info
+
+Similar Apps : Google login(SSO), Firebase
+
+
+Database credentials: credshield/credshield
+
+Database Name: credshield_db
+
+
+Requirements: Java(21), Gradle, Postgresql
+
+
+
+Users [UUid, identifier_email, identifier_phone, display_name, first_name, last_name, user_profile_pic, email_verified, phone_verified, locked, created_at, provider_id, Role_id, authenticator_key]
+
+Application [UUID, app_name, app_logo, client_id, client_Secret, created_at]
+
+Options [id, name, display_text]
+
+application_options [app_uuid, options_id, enabled]

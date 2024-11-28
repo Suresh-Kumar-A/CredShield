@@ -1,0 +1,25 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:postgresql://localhost:5432/credshield_db
+    username: credshield
+    password: credshield
+    driver-class-name: org.postgresql.Driver
+  application:
+    name: credshield
+server:
+  port: 9090
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,env,info
+  endpoint:
+    env:
+      access: read_only
+    info:
+      access: read_only
+    health:
+      access: read_only

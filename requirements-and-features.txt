@@ -14,7 +14,9 @@ CredShield
 
 Goal: I should completly forget about user management & should be able to just call api to get the info
 
-Similar Apps : Google login(SSO), Firebase
+Similar Apps : Clerk, Google login(SSO), Firebase
+
+Reference App: https://clerk.com/
 
 
 Database credentials: credshield/credshield
@@ -25,6 +27,8 @@ Database Name: credshield_db
 Requirements: Java(21), Gradle, Postgresql
 
 
+Eraser Project Link: https://app.eraser.io/workspace/r1HJRLasjP7R52ALcgYa
+
 
 Users [UUid, identifier_email, identifier_phone, display_name, first_name, last_name, user_profile_pic, email_verified, phone_verified, locked, created_at, provider_id, Role_id, authenticator_key]
 
@@ -33,3 +37,51 @@ Application [UUID, app_name, app_logo, client_id, client_Secret, created_at]
 Options [id, name, display_text]
 
 application_options [app_uuid, options_id, enabled]
+
+
+
++) Only app can decide what type of auth is allowed, whether mfa is mandatory, and any other policies
+
+
+
++) what the app module is going to do (authentication/authorization)
++) how are sessions going to be maintained
++) how other modules are going to comunicate with this
++) how user informations are going to be shared?
++) how other modules can connect to our app module(i.e.,) is there any library available?
++) how simplified is it to add this to their modules?
+
+
+The most comprehensive User Management Platform
+
+Need more than just a sign-in box? Clerk is a complete suite of embeddable UIs, flexible APIs, and admin dashboards to authenticate and manage your users.
+
+Session Management
+Clerk manages the full session lifecycle, including critical security functionality like active device monitoring and session revocation.
+
+Multifactor Authentication
+Each user's self-serve multifactor settings are enforced automatically during sign-in.
+
+Social Sign-On
+Add high-conversion Social Sign-on (SSO) to your application in minutes. 20+ options and growing.
+
+Bot Detection
+Dramatically reduce fraudulent sign-ups with built-in, continually updated machine learning.
+
+Email and SMS one-time passcodes
+Fast and reliable one-time passcode delivery with built-in brute force prevention.
+
+Passwords
+Simple and secure password authentication, complete with breach detection and recovery options.
+
+Reference App: https://clerk.com/
+
+Frameworks
+Seamless SDKs for modern frameworks
+
+Clerk keeps developer experience front-and-center by providing helpful SDKs for most modern frameworks on web and mobile.
+
+Integrations
+Integrations with the tools you love
+
+Leverage Clerk as the source of truth for your user data and seamlessly integrate with the tools that you already depend on.
